@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<body>
+    <header>
+        <div class="jumbotron text-center">
+
+            <h1>mon Site</h1>
+
+            <!-- link  Url.Action (link with img or text) write like that : (
+            first : "name method controllers render view => here Index",
+            second : " name controller where method exist => here Home"
+            ) -->
+            <a href="@Url.Action("Index", "Home")">
+                <span>homepage</span>
+            </a>
+
+            <a href="/Accueil/Lalist">Lalist</a>
+
+            <!-- link ActionLink (simple navigation) write like that : (
+        first : " nameLink => here lien en sharp",
+        two : "name method controllers render view => here LaView",
+        last : " name controller where methods exist => here Accueill"
+        ) -->
+            @Html.ActionLink("lien en sharp", "LaView", "Accueil");
+
+            <p> c'est le fameux texte que je voulais afficher </p>
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
